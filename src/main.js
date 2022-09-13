@@ -37,24 +37,20 @@ document.querySelectorAll(".parallaxcontainer").forEach((parallaxcontainer) => {
   });
 });
 
-document
-  .querySelectorAll(".parallaxcontainer2")
-  .forEach((parallaxcontainer) => {
-    console.log(parallaxcontainer);
+document.querySelectorAll(".parallaxcontainer").forEach((parallaxcontainer) => {
+  console.log(parallaxcontainer);
 
-    const elementderskalparallaxes = parallaxcontainer.querySelector("#fakta1");
-    const elementderskalparallaxes2 =
-      parallaxcontainer.querySelector("#fakta2");
-    const elementderskalparallaxes3 =
-      parallaxcontainer.querySelector("#fakta3");
+  const elementderskalparallaxes3 = parallaxcontainer.querySelector("#fakta1");
+  const elementderskalparallaxes4 = parallaxcontainer.querySelector("#fakta2");
+  const elementderskalparallaxes5 = parallaxcontainer.querySelector("#fakta3");
 
-    scroll(animate(elementderskalparallaxes, { y: [1000, 2000] }), {
-      target: elementderskalparallaxes,
-    });
-    scroll(animate(elementderskalparallaxes2, { y: [100, 700] }), {
-      target: elementderskalparallaxes2,
-    });
-    scroll(animate(elementderskalparallaxes3, { y: [-100, 500] }), {
-      target: elementderskalparallaxes3,
-    });
+  scroll(animate(elementderskalparallaxes3, { y: [500, 1600] }), {
+    target: elementderskalparallaxes3,
   });
+  scroll(animate(elementderskalparallaxes4, { y: [600, 1800] }), {
+    target: elementderskalparallaxes4,
+  });
+  scroll(animate(elementderskalparallaxes5, { y: [670, 2000] }), {
+    target: elementderskalparallaxes5,
+  });
+});

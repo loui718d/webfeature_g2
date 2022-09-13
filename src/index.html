@@ -9,7 +9,7 @@
   </head>
   <body class="grid place-items-center">
     <!-- Christian -->
-    <section class="w-100 parallaxcontainer mt-0 h-[300vh]">
+    <section class="w-100 parallaxcontainer mt-0 h-[400vh]">
       <div class="sticky top-0">
         <video autoplay muted loop class="sticky" src="splashvideo.mp4"></video>
       </div>
@@ -26,34 +26,33 @@
         drømme om at bruge sine egne fotos - faktisk kan han ikke fordrage sit
         eget arbejde.
       </p>
+      <div
+        class="col-span-2 col-start-2 flex flex-col gap-10 text-white md:grid md:grid-cols-5"
+      >
+        <div class="col-span-2 col-start-2">
+          <p id="fakta1" class="bg-[#631C06] px-8 py-8">
+            “Pierre sælger 2 millioner fotos om året”
+          </p>
+        </div>
+        <div class="col-span-2 col-start-3">
+          <p id="fakta2" class="bg-[#631C06] px-8 py-8">
+            “Det svarer til én fotolicens hvert 16. sekund”
+          </p>
+        </div>
+        <div class="col-span-2 col-start-2">
+          <p id="fakta3" class="bg-[#631C06] px-8 py-8">
+            “Du ser hans fotos ca. 2 gange om dagen”
+          </p>
+        </div>
+      </div>
     </section>
     <main>
       <section
-        class="w-100 parallaxcontainer2 mt-0 h-[400vh] bg-primary md:grid md:grid-cols-4"
+        class="sticky top-0 mb-96 h-[100vh] bg-secondary py-52 text-white md:grid md:grid-cols-4"
       >
         <div
-          class="col-span-2 col-start-2 flex flex-col gap-10 text-white md:grid md:grid-cols-5"
+          class="static col-span-2 col-start-2 grid place-items-center text-white"
         >
-          <div class="col-span-2 col-start-2">
-            <p id="fakta1" class="bg-[#631C06] px-8 py-8">
-              “Pierre sælger 2 millioner fotos om året”
-            </p>
-          </div>
-          <div class="col-span-2 col-start-3">
-            <p id="fakta2" class="bg-[#631C06] px-8 py-8">
-              “Det svarer til én fotolicens hvert 16. sekund”
-            </p>
-          </div>
-          <div class="col-span-2 col-start-2">
-            <p id="fakta3" class="bg-[#631C06] px-8 py-8">
-              “Du ser hans fotos ca. 2 gange om dagen”
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="bg-secondary py-80 text-white md:grid md:grid-cols-4">
-        <div class="col-span-2 col-start-2 grid place-items-center text-white">
           <h2 class="mb-12 text-4xl text-white">Hvad er stock fotos?</h2>
 
           <p>
@@ -76,11 +75,17 @@
             fra. Men stock-foto branchen var én af de tidlige til at blive fuldt
             digitaliseret.
           </p>
+          <button class="absolute right-20 top-10 mt-10 border-2 py-2 px-2">
+            SE STOCK FOTO HER
+          </button>
         </div>
       </section>
 
       <!-- Amanda -->
-      <section class="grid grid-cols-4 gap-4 bg-primary px-8 text-neutral-50">
+
+      <section
+        class="sticky top-0 grid h-screen grid-cols-4 gap-4 bg-primary px-8 text-neutral-50"
+      >
         <div class="col-span-1 col-start-1">
           <img class="h-68 w-80" src="img/filmfoto.jpeg" alt="" />
         </div>
