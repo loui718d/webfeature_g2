@@ -139,7 +139,8 @@ document
 //   appearOnScroll.observe(fader);
 // });
 
-const frontPic = document.querySelector(".front");
+const frontPic = document.querySelector(".back");
+const backPic = document.querySelector(".front");
 
 const observer = new IntersectionObserver(
   (entries) => {
@@ -152,5 +153,17 @@ const observer = new IntersectionObserver(
     threshold: 0.5,
   }
 );
+const observer2 = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      entry.target.classList.toggle("show", entry.isIntersecting);
+    });
+    console.log(entries);
+  },
+  {
+    threshold: 0.5,
+  }
+);
 
 observer.observe(frontPic);
+observer2.observe(backPic);

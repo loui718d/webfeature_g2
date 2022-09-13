@@ -80,4 +80,8 @@
     opacity: 0;
     transition: 2s;
   }
+  .show {
+    opacity: 1;
+    transition: 2s;
+  }
 }
