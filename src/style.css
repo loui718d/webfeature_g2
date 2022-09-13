@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 @layer components {
-  h2 {
+  h2,
+  h1 {
     font-family: "monte-stella", sans-serif;
     font-weight: 500;
     font-style: normal;

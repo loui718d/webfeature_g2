@@ -11,14 +11,14 @@
     <!-- Christian -->
     <section class="w-100 parallaxcontainer mt-0 h-[300vh]">
       <div class="sticky top-0">
-        <video autoplay muted class="sticky" src="splashvideo.mp4"></video>
+        <video autoplay muted loop class="sticky" src="splashvideo.mp4"></video>
       </div>
 
-      <h1 class="mx-auto w-1/2 p-10 text-3xl text-white">
-        Uperfekt er perfekt - fedt!
+      <h1 class="mx-auto w-1/2 p-10 text-8xl text-white">
+        Uperfekt er perfekt
       </h1>
 
-      <p class="mx-auto w-1/2 p-10 text-xl text-white">
+      <p id="intro" class="mx-auto w-1/2 p-10 text-xl text-white">
         Pierre Falcke. Du ved formentligt ikke hvem han er. Men indtil for kort
         tid siden, så du hans værker et par gange om dagen, hver dag, året
         rundt. Pierre Falcke var en af verdens bedst sælgende stock-fotografer,
@@ -27,28 +27,32 @@
         eget arbejde.
       </p>
     </section>
-    <main class="">
+    <main>
       <section
-        class="w-100 parallaxcontainer mt-0 h-[300vh] bg-primary md:grid md:grid-cols-4"
+        class="w-100 parallaxcontainer2 mt-0 h-[200vh] bg-primary md:grid md:grid-cols-4"
       >
         <div class="col-span-2 col-start-2 flex flex-col gap-20 text-white">
-          <p class="bg-[#631C06] px-8 py-8">
-            “Pierre sælger 2 millioner fotos om året”
-          </p>
-
-          <p class="bg-[#631C06] px-8 py-8">
-            “Det svarer til én fotolicens hvert 16. sekund”
-          </p>
-
-          <p class="bg-[#631C06] px-8 py-8">
-            “Du ser hans fotos ca. 2 gange om dagen”
-          </p>
+          <div>
+            <p id="fakta1" class="bg-[#631C06] px-8 py-8">
+              “Pierre sælger 2 millioner fotos om året”
+            </p>
+          </div>
+          <div>
+            <p id="fakta2" class="bg-[#631C06] px-8 py-8">
+              “Det svarer til én fotolicens hvert 16. sekund”
+            </p>
+          </div>
+          <div>
+            <p id="fakta3" class="bg-[#631C06] px-8 py-8">
+              “Du ser hans fotos ca. 2 gange om dagen”
+            </p>
+          </div>
         </div>
       </section>
 
-      <section class="bg-secondary text-white md:grid md:grid-cols-4">
+      <section class="bg-secondary py-96 text-white md:grid md:grid-cols-4">
         <div class="col-span-2 col-start-2 grid place-items-center text-white">
-          <h2 class="text-4xl text-white">Hvad er stock fotos?</h2>
+          <h2 class="mb-12 text-4xl text-white">Hvad er stock fotos?</h2>
 
           <p>
             Stock-fotos er billeder, der kan købes fra et foto-website. De

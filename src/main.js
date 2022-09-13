@@ -22,17 +22,39 @@ function scrollFunction() {
 document.querySelectorAll(".parallaxcontainer").forEach((parallaxcontainer) => {
   console.log(parallaxcontainer);
 
-  const elementderskalparallaxes = parallaxcontainer.querySelector("p");
+  const elementderskalparallaxes = parallaxcontainer.querySelector("h1");
 
-  const elementderskalparallaxes2 = parallaxcontainer.querySelector("h1");
+  const elementderskalparallaxes2 = parallaxcontainer.querySelector("p");
 
   console.log(elementderskalparallaxes);
 
-  scroll(animate(elementderskalparallaxes, { y: [50, -50] }), {
+  scroll(animate(elementderskalparallaxes, { y: [250, 900] }), {
     target: elementderskalparallaxes,
   });
 
-  scroll(animate(elementderskalparallaxes2, { y: [20, -600] }), {
+  scroll(animate(elementderskalparallaxes2, { y: [200, 900] }), {
     target: elementderskalparallaxes2,
   });
 });
+
+document
+  .querySelectorAll(".parallaxcontainer2")
+  .forEach((parallaxcontainer) => {
+    console.log(parallaxcontainer);
+
+    const elementderskalparallaxes = parallaxcontainer.querySelector("#fakta1");
+    const elementderskalparallaxes2 =
+      parallaxcontainer.querySelector("#fakta2");
+    const elementderskalparallaxes3 =
+      parallaxcontainer.querySelector("#fakta3");
+
+    scroll(animate(elementderskalparallaxes, { y: [300, 900] }), {
+      target: elementderskalparallaxes,
+    });
+    scroll(animate(elementderskalparallaxes2, { y: [400, 900] }), {
+      target: elementderskalparallaxes2,
+    });
+    scroll(animate(elementderskalparallaxes3, { y: [500, 900] }), {
+      target: elementderskalparallaxes3,
+    });
+  });
