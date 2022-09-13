@@ -1,6 +1,7 @@
 import "./style.css";
 
 import { animate, stagger, inView, scroll, timeline } from "motion";
+import { doc } from "prettier";
 
 const body = document.querySelector("body");
 
@@ -103,14 +104,53 @@ document
 
 // crossfade
 
-const checkpoint = 200;
+// const checkpoint = 200;
 
-window.addEventListener("scroll", () => {
-  const currentScroll = window.pageYOffset;
-  if (currentScroll <= checkpoint) {
-    opacity = 1 - currentScroll / checkpoint;
-  } else {
-    opacity = 0;
+// window.addEventListener("scroll", () => {
+//   const currentScroll = window.pageYOffset;
+//   if (currentScroll <= checkpoint) {
+//     opacity = 1 - currentScroll / checkpoint;
+//   } else {
+//     opacity = 0;
+//   }
+//   document.querySelector(".front").style.opacity = opacity;
+// });
+
+//Crossfade
+// const apperOptions = { threshold: 1, rootMargin: "0px 0px -200px 0px " };
+// const faders = document.querySelectorAll(".fade-in");
+
+// const appearOnScroll = new IntersectionObserver(function (
+//   entries,
+//   appearOnScroll
+// ) {
+//   entries.forEach((entry) => {
+//     if (!entry.isIntersecting) {
+//       return;
+//     } else {
+//       entry.target.classList.add("appear");
+//       appearOnScroll.unobserve(entry.target);
+//     }
+//   });
+// },
+// apperOptions);
+
+// faders.forEach((fader) => {
+//   appearOnScroll.observe(fader);
+// });
+
+const frontPic = document.querySelector(".front");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      entry.target.classList.toggle("hide", entry.isIntersecting);
+    });
+    console.log(entries);
+  },
+  {
+    threshold: 0.5,
   }
-  document.querySelector(".front").style.opacity = opacity;
-});
+);
+
+observer.observe(frontPic);

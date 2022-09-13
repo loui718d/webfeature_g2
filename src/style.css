@@ -76,4 +76,8 @@
       opacity: 0;
     }
   }
+  .hide {
+    opacity: 0;
+    transition: 2s;
+  }
 }
