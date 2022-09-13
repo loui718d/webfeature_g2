@@ -11,7 +11,7 @@ window.onscroll = function () {
 function scrollFunction() {
   if (
     document.documentElement.scrollTop > 600 ||
-    document.documentElement.scrollTop > 3000
+    document.documentElement.scrollTop > 600
   ) {
     body.classList.add("flicker-1");
   } else {
@@ -48,13 +48,13 @@ document
     const elementderskalparallaxes3 =
       parallaxcontainer.querySelector("#fakta3");
 
-    scroll(animate(elementderskalparallaxes, { y: [300, 900] }), {
+    scroll(animate(elementderskalparallaxes, { y: [1000, 2000] }), {
       target: elementderskalparallaxes,
     });
-    scroll(animate(elementderskalparallaxes2, { y: [400, 900] }), {
+    scroll(animate(elementderskalparallaxes2, { y: [100, 700] }), {
       target: elementderskalparallaxes2,
     });
-    scroll(animate(elementderskalparallaxes3, { y: [500, 900] }), {
+    scroll(animate(elementderskalparallaxes3, { y: [-100, 500] }), {
       target: elementderskalparallaxes3,
     });
   });
