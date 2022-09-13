@@ -54,3 +54,63 @@ document.querySelectorAll(".parallaxcontainer").forEach((parallaxcontainer) => {
     target: elementderskalparallaxes5,
   });
 });
+
+document
+  .querySelectorAll(".parallaxcontainer2")
+  .forEach((parallaxcontainer) => {
+    console.log(parallaxcontainer);
+
+    const elementderskalparallaxes6 =
+      parallaxcontainer.querySelector("#historie1");
+
+    scroll(animate(elementderskalparallaxes6, { y: [300, 2000] }), {
+      target: elementderskalparallaxes6,
+    });
+  });
+
+document
+  .querySelectorAll(".parallaxcontainer3")
+  .forEach((parallaxcontainer) => {
+    console.log(parallaxcontainer);
+
+    const elementderskalparallaxes7 =
+      parallaxcontainer.querySelector("#historie2");
+    const elementderskalparallaxes8 =
+      parallaxcontainer.querySelector("#historie3");
+
+    scroll(animate(elementderskalparallaxes7, { y: [100, 2500] }), {
+      target: elementderskalparallaxes7,
+    });
+    scroll(animate(elementderskalparallaxes8, { y: [100, 400] }), {
+      target: elementderskalparallaxes8,
+    });
+  });
+
+document
+  .querySelectorAll(".parallaxcontainer4")
+  .forEach((parallaxcontainer) => {
+    console.log(parallaxcontainer);
+
+    const elementderskalparallaxes9 = parallaxcontainer.querySelector("button");
+
+    scroll(
+      animate(elementderskalparallaxes9, { y: [100, -100], x: [-300, 400] }),
+      {
+        target: elementderskalparallaxes9,
+      }
+    );
+  });
+
+// crossfade
+
+const checkpoint = 200;
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll <= checkpoint) {
+    opacity = 1 - currentScroll / checkpoint;
+  } else {
+    opacity = 0;
+  }
+  document.querySelector(".front").style.opacity = opacity;
+});
