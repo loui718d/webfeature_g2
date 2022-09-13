@@ -10,8 +10,8 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (
-    document.body.scrollTop > 600 ||
-    document.documentElement.scrollTop > 600
+    document.documentElement.scrollTop > 600 ||
+    document.documentElement.scrollTop > 3000
   ) {
     body.classList.add("flicker-1");
   } else {
