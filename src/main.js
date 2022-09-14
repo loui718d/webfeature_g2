@@ -102,6 +102,25 @@ document
     );
   });
 
+document
+  .querySelectorAll(".parallaxcontainer5")
+  .forEach((parallaxcontainer) => {
+    console.log(parallaxcontainer);
+
+    const elementderskalparallaxes10 =
+      parallaxcontainer.querySelector("#skillevej1");
+    const elementderskalparallaxes11 =
+      parallaxcontainer.querySelector("#skillevej1");
+
+    scroll(animate(elementderskalparallaxes10, { y: [200, 100] }), {
+      target: elementderskalparallaxes10,
+    });
+
+    scroll(animate(elementderskalparallaxes11, { y: [300, 100] }), {
+      target: elementderskalparallaxes11,
+    });
+  });
+
 // crossfade
 
 // const checkpoint = 200;
