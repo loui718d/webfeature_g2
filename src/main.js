@@ -215,3 +215,22 @@ const observer5 = new IntersectionObserver(
 );
 
 observer5.observe(observerSkillevej);
+
+// split effekt
+
+const observerSplit1 = document.querySelector(".loader");
+
+const observer6 = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      document.querySelector("body").classList.toggle("animate");
+      document.querySelector("body").classList.toggle("animate2");
+    });
+    console.log(entries);
+  },
+  {
+    threshold: 0.5,
+  }
+);
+
+observer6.observe(observerSplit1);
