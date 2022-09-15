@@ -231,17 +231,17 @@ observer4.observe(observerStock);
 
 // split effekt
 
-const splitEffekt = document.querySelector(".SkilSec");
+const splitEffekt = document.querySelector(".louise");
 
 const observer6 = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      document.querySelector(".SkilOver").classList.toggle("loader");
+      document.querySelector(".skillOverS").classList.toggle("loader");
     });
     console.log(entries);
   },
   {
-    threshold: 0.8,
+    threshold: 1,
   }
 );
 
