@@ -197,21 +197,21 @@ const observer2 = new IntersectionObserver(
 observer.observe(frontPic);
 observer2.observe(backPic);
 
-const observerFame = document.querySelector(".fame");
+// const observerFame = document.querySelector(".fame");
 
-const observer3 = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      document.querySelector("body").classList.toggle("flicker-1");
-    });
-    console.log(entries);
-  },
-  {
-    threshold: 0.5,
-  }
-);
+// const observer3 = new IntersectionObserver(
+//   (entries) => {
+//     entries.forEach((entry) => {
+//       document.querySelector("body").classList.toggle("flicker-1");
+//     });
+//     console.log(entries);
+//   },
+//   {
+//     threshold: 0.5,
+//   }
+// );
 
-observer3.observe(observerFame);
+// observer3.observe(observerFame);
 
 const observerStock = document.querySelector(".stock");
 
