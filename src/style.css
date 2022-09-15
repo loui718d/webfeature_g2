@@ -84,4 +84,7 @@
     opacity: 1;
     transition: 2s;
   }
+  .none {
+    display: none;
+  }
 }
