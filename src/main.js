@@ -131,6 +131,45 @@ document
     });
   });
 
+document
+  .querySelectorAll(".parallaxcontainer6")
+  .forEach((parallaxcontainer) => {
+    console.log(parallaxcontainer);
+
+    const elementderskalparallaxes14 =
+      parallaxcontainer.querySelector("#begyndelse1");
+    const elementderskalparallaxes15 =
+      parallaxcontainer.querySelector("#begyndelse2");
+    const elementderskalparallaxes16 =
+      parallaxcontainer.querySelector("#begyndelse3");
+    const elementderskalparallaxes17 =
+      parallaxcontainer.querySelector("#begyndelse4");
+    const elementderskalparallaxes18 =
+      parallaxcontainer.querySelector("#begyndelse5");
+    const elementderskalparallaxes19 =
+      parallaxcontainer.querySelector("#begyndelse6");
+
+    scroll(animate(elementderskalparallaxes14, { y: [100, 2090] }), {
+      target: elementderskalparallaxes14,
+    });
+
+    scroll(animate(elementderskalparallaxes15, { y: [200, 1000] }), {
+      target: elementderskalparallaxes15,
+    });
+    scroll(animate(elementderskalparallaxes16, { y: [200, 1500] }), {
+      target: elementderskalparallaxes16,
+    });
+    scroll(animate(elementderskalparallaxes17, { y: [800, -200] }), {
+      target: elementderskalparallaxes17,
+    });
+    scroll(animate(elementderskalparallaxes18, { y: [-100, -600] }), {
+      target: elementderskalparallaxes18,
+    });
+    scroll(animate(elementderskalparallaxes19, { y: [-300, -1000] }), {
+      target: elementderskalparallaxes19,
+    });
+  });
+
 // crossfade
 
 // const checkpoint = 200;
