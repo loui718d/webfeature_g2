@@ -110,14 +110,24 @@ document
     const elementderskalparallaxes10 =
       parallaxcontainer.querySelector("#skillevej1");
     const elementderskalparallaxes11 =
-      parallaxcontainer.querySelector("#skillevej1");
+      parallaxcontainer.querySelector("#skillevej2");
+    const elementderskalparallaxes12 =
+      parallaxcontainer.querySelector("#skillevej3");
+    const elementderskalparallaxes13 =
+      parallaxcontainer.querySelector("#skillevej4");
 
-    scroll(animate(elementderskalparallaxes10, { y: [200, 100] }), {
+    scroll(animate(elementderskalparallaxes10, { y: [200, 1090] }), {
       target: elementderskalparallaxes10,
     });
 
-    scroll(animate(elementderskalparallaxes11, { y: [300, 100] }), {
+    scroll(animate(elementderskalparallaxes11, { y: [300, 1000] }), {
       target: elementderskalparallaxes11,
+    });
+    scroll(animate(elementderskalparallaxes12, { y: [300, 1000] }), {
+      target: elementderskalparallaxes12,
+    });
+    scroll(animate(elementderskalparallaxes13, { y: [300, 1000] }), {
+      target: elementderskalparallaxes13,
     });
   });
 
