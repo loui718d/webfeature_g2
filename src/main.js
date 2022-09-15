@@ -229,35 +229,19 @@ const observer4 = new IntersectionObserver(
 
 observer4.observe(observerStock);
 
-// const observerSkillevej = document.querySelector(".skillevej");
-
-// const observer5 = new IntersectionObserver(
-//   (entries) => {
-//     entries.forEach((entry) => {
-//       document.querySelector("body").classList.toggle("flicker-1");
-//     });
-//     console.log(entries);
-//   },
-//   {
-//     threshold: 0.5,
-//   }
-// );
-
-// observer5.observe(observerSkillevej);
-
 // split effekt
 
-const splitEffekt = document.querySelector(".skillevejSec");
+const splitEffekt = document.querySelector(".SkilSec");
 
 const observer6 = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      document.querySelector(".skillevejSec").classList.toggle(".loader");
+      document.querySelector(".SkilOver").classList.toggle("loader");
     });
     console.log(entries);
   },
   {
-    threshold: 0.5,
+    threshold: 0.8,
   }
 );
 
