@@ -85,11 +85,34 @@
     opacity: 1;
     transition: 2s;
   }
-
+  .none {
+    display: none;
+  }
+  <<<<<<< HEAD
   /* split effekt */
   .loader span {
     position: absolute;
     top: 40px;
+    left: 0;
+    width: 100%;
+  }
+  .loader span:nth-child(1) {
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+    animation: animate 4s reverse both;
+  }
+  .loader span:nth-child(2) {
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+    animation: animate2 4s linear both;
+  }
+  @keyframes animate {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  /* split effekt */
+  .loader span {
+    position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
   }
