@@ -159,7 +159,7 @@ document
     scroll(animate(elementderskalparallaxes16, { y: [200, 1500] }), {
       target: elementderskalparallaxes16,
     });
-    scroll(animate(elementderskalparallaxes17, { y: [800, -200] }), {
+    scroll(animate(elementderskalparallaxes17, { y: [800, 100] }), {
       target: elementderskalparallaxes17,
     });
     scroll(animate(elementderskalparallaxes18, { y: [-100, -600] }), {
