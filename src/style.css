@@ -142,3 +142,8 @@
     }
   }
 }
+
+.stockbillede {
+  object-fit: cover;
+  height: auto;
+}
